@@ -10,11 +10,15 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_wall2</sprite>
     <sprite>sprites\sprite3</sprite>
+    <sprite>sprites\spr_player_run</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>
     <object>objects\obj_player</object>
