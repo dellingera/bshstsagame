@@ -33,6 +33,9 @@ jumpspeed = 7;
 movespeed = 4;
 cooldownInitial = 30;
 fireballCooldown = cooldownInitial;
+facingRightWay = 1;
+
+var startScale = image_xscale;
 
 //make global variables
 globalvar facing; 
