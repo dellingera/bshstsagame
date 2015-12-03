@@ -12,6 +12,8 @@
     <sprite>sprites\sprite3</sprite>
     <sprite>sprites\spr_player_run</sprite>
     <sprite>sprites\fireballSprite</sprite>
+    <sprite>sprites\spr_ramp</sprite>
+    <sprite>sprites\spr_rex</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -23,8 +25,8 @@
   <objects name="objects">
     <object>objects\obj_wall</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_wall2</object>
     <object>objects\fireball</object>
+    <object>objects\obj_ramp</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

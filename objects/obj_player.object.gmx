@@ -102,6 +102,22 @@ if (place_meeting(x, y+vsp, obj_wall)) { //if they will hit the wall next step
     }
     vsp = 0; //now get rid of your speed, you just hit a wall
 }
+
+//---------------------------------------------------------Ramps
+//no idea
+show_debug_message(string(key_jump));
+if (place_meeting(x,y+1,obj_ramp)) { 
+    vsp = key_jump * -jumpspeed      
+}
+
+//vertical collisions handling
+if (place_meeting(x, y+vsp, obj_ramp)) { //if they will hit the wall next step
+    while(!place_meeting(x,y+sign(vsp),obj_ramp)) { //while they are not touching it
+        y += sign(vsp); //move them one towards it
+    }
+    vsp = 0; //now get rid of your speed, you just hit a wall
+}
+
 y += vsp; //move the character according to the vsp
 
 //-----------------------------------------------------------Deal With Horizontal Speed
@@ -110,6 +126,15 @@ if (place_meeting(x+hsp,y,obj_wall)) {  //if the character will touch something 
     while(!place_meeting(x+sign(hsp),y,obj_wall)) { //while they are not touching the wall
         x += sign(hsp); //move them towards it
     }
+    hsp = 0;  //now get rid of any horizontal speed
+}
+//If they are about to run into a ramp, move them right up close to that wall
+if (place_meeting(x+hsp,y,obj_ramp)) {  //if the character will touch something in the future
+    while(!place_meeting(x+sign(hsp),y,obj_ramp)) { //while they are not touching the wall
+        x += sign(hsp); //move them towards it
+    }
+    y = y-3;
+    x = x + 3*facing;
     hsp = 0;  //now get rid of any horizontal speed
 }
 x += hsp;  //the speed has been dealt with if it needs changing, now add it to the x position
