@@ -9,7 +9,6 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_wall2</sprite>
-    <sprite>sprites\sprite3</sprite>
     <sprite>sprites\spr_player_run</sprite>
     <sprite>sprites\fireballSprite</sprite>
     <sprite>sprites\spr_ramp</sprite>
@@ -27,6 +26,7 @@
     <object>objects\obj_player</object>
     <object>objects\fireball</object>
     <object>objects\obj_ramp</object>
+    <object>objects\obj_run</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
