@@ -13,6 +13,11 @@
     <sprite>sprites\fireballSprite</sprite>
     <sprite>sprites\spr_ramp</sprite>
     <sprite>sprites\spr_rex</sprite>
+    <sprite>sprites\spr_stone</sprite>
+    <sprite>sprites\spr_slime_idle</sprite>
+    <sprite>sprites\spr_slime_run</sprite>
+    <sprite>sprites\spr_slime_jump</sprite>
+    <sprite>sprites\spr_slime_fall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -27,6 +32,8 @@
     <object>objects\fireball</object>
     <object>objects\obj_ramp</object>
     <object>objects\obj_run</object>
+    <object>objects\obj_stone</object>
+    <object>objects\obj_slime_idle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
