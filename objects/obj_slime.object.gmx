@@ -135,6 +135,15 @@ if (facing != image_xscale){
     skip = true;
 }
 
+if (place_meeting (x,y+1,obj_stone))
+{
+    if (move != 0) sprite_index = spr_slime_run; else sprite_index = spr_slime_idle; //if move doesn't equal 0 then player runs else it is idle
+}
+else //refering to the previous statement
+{
+    if (vsp &lt; 0) sprite_index = spr_slime_jump; else sprite_index = spr_slime_fall; //if player height is less than zero player jumps else it falls
+}
+
 //-----------------------------------------------------------Deal With Horizontal Speed
 if(!skip) {
     //If they are about to run into a wall, move them right up close to that wall

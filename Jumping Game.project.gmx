@@ -18,6 +18,10 @@
     <sprite>sprites\spr_slime_run</sprite>
     <sprite>sprites\spr_slime_jump</sprite>
     <sprite>sprites\spr_slime_fall</sprite>
+    <sprite>sprites\spr_sand</sprite>
+    <sprite>sprites\spr_sandstone</sprite>
+    <sprite>sprites\spr_icestone</sprite>
+    <sprite>sprites\spr_menu</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -35,9 +39,13 @@
     <object>objects\obj_stone</object>
     <object>objects\obj_slime</object>
     <object>objects\player</object>
+    <object>objects\obj_sandstone</object>
+    <object>objects\obj_sand</object>
+    <object>objects\obj_icestone</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
