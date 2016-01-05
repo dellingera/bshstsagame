@@ -22,6 +22,7 @@
     <sprite>sprites\spr_sandstone</sprite>
     <sprite>sprites\spr_icestone</sprite>
     <sprite>sprites\spr_menu</sprite>
+    <sprite>sprites\spr_fireblock</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -42,6 +43,7 @@
     <object>objects\obj_sandstone</object>
     <object>objects\obj_sand</object>
     <object>objects\obj_icestone</object>
+    <object>objects\obj_fireblock</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
