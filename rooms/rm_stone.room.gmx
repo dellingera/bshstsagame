@@ -5676,7 +5676,20 @@
     <instance objName="obj_stone" x="5312" y="1472" name="inst_E7BED8B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stone" x="5184" y="1600" name="inst_2D7196A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ramp" x="336" y="944" name="inst_B004C842" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="4880" y="1120" name="inst_5E1C875D" locked="0" code="target_x = 64;&#xA;target_y = 1024;&#xA;target_r = rm_desert;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="4880" y="1120" name="inst_5E1C875D" locked="0" code="target_x = 64;&#xA;target_y = 1024;&#xA;target_r = rm_desert;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ramp" x="528" y="912" name="inst_AC8B5855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="512" y="384" name="inst_8EE305F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="544" y="384" name="inst_D3DCA6D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="544" y="416" name="inst_2EE4E0E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="896" y="384" name="inst_1CED9E41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="896" y="416" name="inst_FE67AFC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="928" y="384" name="inst_686592C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="1696" y="480" name="inst_56547646" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="1632" y="480" name="inst_4B689947" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="1632" y="512" name="inst_56E8D970" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="1664" y="512" name="inst_0F4830EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone" x="1664" y="544" name="inst_56948B8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="288" y="896" name="inst_AF0B954D" locked="0" code="target_x = 64;&#xA;target_y = 1024;&#xA;target_r = rm_desert;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="224" y="256" w="16" h="16" xo="0" yo="0" id="10000002" name="inst_89FF0D67" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

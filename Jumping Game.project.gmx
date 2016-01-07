@@ -23,6 +23,9 @@
     <sprite>sprites\spr_icestone</sprite>
     <sprite>sprites\spr_menu</sprite>
     <sprite>sprites\spr_fireblock</sprite>
+    <sprite>sprites\spr_sandstoneramp</sprite>
+    <sprite>sprites\spr_sandramp</sprite>
+    <sprite>sprites\spr_warp</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -44,10 +47,13 @@
     <object>objects\obj_sand</object>
     <object>objects\obj_icestone</object>
     <object>objects\obj_fireblock</object>
+    <object>objects\obj_sandstoneramp</object>
+    <object>objects\obj_sandramp</object>
+    <object>objects\obj_warp</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
-    <room>rooms\room1</room>
+    <room>rooms\rm_stone</room>
+    <room>rooms\rm_desert</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
