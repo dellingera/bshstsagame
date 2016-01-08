@@ -25,21 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialize Variables
-grav = 0.2;
-hsp = 0;
-vsp = 0;
-jumpspeed = 7;
-movespeed = 4;
-cooldownInitial = 30;
-fireballCooldown = cooldownInitial;
-facingRightWay = 1;
+            <string>//option variables
+grav = 0.2; //the strength of the gravity
+jumpspeed = 7; //initial speed after jumping
+movespeed = 4; //speed of horizontal movement
+vspMax = 10; //max possible speed
+characterWidth = 40; //how wide is the sprite
+rampSlopeMax = 5; //what is the slope, in pixels, a ramp can be, max
+rampClimbSpeed = 3; //how far to shove your character into a ramp
 
-var startScale = image_xscale;
+//state variables
+hsp = 0; //horizontal speed
+vsp = 0; //vertical speed
+facingRightWay = 1; //facing last frames direction
+var startScale = image_xscale; //flip it over without warping it
 
-//make global variables
-globalvar facing; 
-facing = 1; //right
+//make global vars
+globalvar facing;
+facing = 1;
 </string>
           </argument>
         </arguments>
@@ -62,107 +65,118 @@ facing = 1; //right
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>targetX=x-325;
+            <string>//this is where the player is supposed to be positioned - the center of the screen
+targetX=x-325;
 targetY=y-360;
+//now, we are moving view 0 to that position based on this formula. I just copied and pasted this lol
 view_xview[0]=(view_xview[0]*7+targetX)/8;//the xview is weighed *7 here. xview*7+targetX*1 --&gt; 8
 view_yview[0]=(view_yview[0]*7+targetY)/8;
 
-//---------------------------------------------------------Get Input Variables
+//now that we have dealt with camera position, we need to determine which keys are being pressed
+//these values are 1 for on, and 0 for off
 key_right = keyboard_check(vk_right);
-key_left = -keyboard_check(vk_left);
-key_jump = keyboard_check_pressed(vk_up);
+key_left = -keyboard_check(vk_left); //except this one, this one is negative - notice the '-' symbol
+key_up = keyboard_check_pressed(vk_up);
 spacebar_pressed = keyboard_check(vk_space);
 
-skip = false;
 
-//---------------------------------------------------------Parse Input Variables
 move = key_left + key_right;
 hsp = move * movespeed; 
+
+preservedHsp = hsp; //we screw with hsp when dealing with platforms, but we need it back for ramps
 
 if (key_right) facing = 1;
 if (key_left == -1) facing = -1;
 
-//----------------------------------------------------------Deal With Fireball
-if(spacebar_pressed &amp;&amp; fireballCooldown &lt; 0) {
-    instance_create(x,y,fireball);
-    fireballCooldown = cooldownInitial;
+//now we modify the vertical speed according to gravity
+if (vsp &lt; vspMax) {
+    vsp += grav; //add the gravity speed in the downward direction 
 }
 
-//----------------------------------------------------------Deal With Vertical Speed
-//basic gravity
-if (vsp &lt; 10) { //if the vsp is less than the maximum vertical movement
-    vsp += grav; //increase the speed of falling .2, or decrease the speed of rising .2. Same thing. 
-}
-//I have no idea what this does
-if (place_meeting(x,y+1,obj_stone)) { 
-    vsp = key_jump * -jumpspeed      
-}
-
-//vertical collisions
-if (place_meeting(x, y+vsp, obj_stone)) { //if they will hit the wall next step
-    while(!place_meeting(x,y+sign(vsp),obj_stone)) { //while they are not touching it
+//handle vertical collisions
+if (place_meeting(x, y+vsp, PLATFORM)) { //if they will hit the wall next step
+    while(!place_meeting(x,y+sign(vsp),PLATFORM)) { //while they are not touching it
         y += sign(vsp); //move them one towards it
     }
     vsp = 0; //now get rid of your speed, you just hit a wall
 }
 
-//---------------------------------------------------------Ramps
-//no idea
-show_debug_message(string(key_jump));
-if (place_meeting(x,y+1,obj_ramp)) { 
-    vsp = key_jump * -jumpspeed      
+
+//handle jumps
+if (place_meeting(x,y+1,PLATFORM)) { //if they are standing on something
+    vsp = key_up * -jumpspeed //set the vsp to the jump speed, unless the up key is not pressed, in which case it is 0
 }
 
-//vertical collisions handling
-if (place_meeting(x, y+vsp, obj_ramp)) { //if they will hit the wall next step
-    while(!place_meeting(x,y+sign(vsp),obj_ramp)) { //while they are not touching it
-        y += sign(vsp); //move them one towards it
-    }
-    vsp = 0; //now get rid of your speed, you just hit a wall
-}
 
-y += vsp; //move the character according to the vsp
+//we have normal vertical postioning handled, let's finalize it
+y += vsp;
 
-//--------------------------------------------------------------------Animate
-if (facing != image_xscale){
-    image_xscale = facing;
-    width = 20;
-    show_debug_message(string(width));
+//skip is going to be needed so the camera doesn't get jumpy when they move back and forth
+skip = false;
+
+//now we make the character face the right way when they move
+if (facing != image_xscale){ //if they are not facing the same way the image is scaled
+    image_xscale = facing; //make is so
+    width = characterWidth/2; //except this is flipping over the left axis, I think. We need to slide it back. 
     width = -facing * width;
-    show_debug_message(string(width));
-    show_debug_message("---");
     x += width;
+    //now we've moved enough. Any more will look weird. Lock out movement this turn. 
     skip = true;
 }
 
-if (place_meeting (x,y+1,obj_stone))
-{
-    if (move != 0) sprite_index = spr_slime_run; else sprite_index = spr_slime_idle; //if move doesn't equal 0 then player runs else it is idle
-}
-else //refering to the previous statement
-{
-    if (vsp &lt; 0) sprite_index = spr_slime_jump; else sprite_index = spr_slime_fall; //if player height is less than zero player jumps else it falls
+//now we set the sprites based on what the player is doing
+if (place_meeting (x,y+1,PLATFORM)){ //if the player is one the ground
+    if (move != 0) { //if we are moving
+        sprite_index = spr_slime_run; //change the sprite to the running one
+    } else {
+         sprite_index = spr_slime_idle; //not moving sprite
+    }
+} else { //we are in the air
+    if (vsp &lt; 0) { //we are moving up
+        sprite_index = spr_slime_jump; 
+    } else { //we are moving down
+        sprite_index = spr_slime_fall; 
+    }
 }
 
-//-----------------------------------------------------------Deal With Horizontal Speed
+//now the vertical speed is final, and the jerky flipping animation is dealt with. Time for horizontal movement. 
 if(!skip) {
     //If they are about to run into a wall, move them right up close to that wall
-    if (place_meeting(x+hsp,y,obj_stone)) {  //if the character will touch something in the future
-        while(!place_meeting(x+sign(hsp),y,obj_stone)) { //while they are not touching the wall
+    if (place_meeting(x+hsp,y,PLATFORM)) {  //if the character will touch something in the future
+        while(!place_meeting(x+sign(hsp),y,PLATFORM)) { //while they are not touching the wall
             x += sign(hsp); //move them towards it
         }
         hsp = 0;  //now get rid of any horizontal speed
     }
-    //If they are about to run into a ramp, move them right up close to that wall
-    if (place_meeting(x+hsp,y,obj_ramp)) {  //if the character will touch something in the future
-        while(!place_meeting(x+sign(hsp),y,obj_ramp)) { //while they are not touching the wall
-            x += sign(hsp); //move them towards it
-        }
-        y = y-3;
-        x = x + 3*facing;
-        hsp = 0;  //now get rid of any horizontal speed
-    }
+    
     x += hsp;  //the speed has been dealt with if it needs changing, now add it to the x position
+}
+
+//now, we have done all of our mundane moving. Remember that RAMP is a child of PLATFORM, so it is solid. 
+//We want ramps of arbitrary slope. But not really, because that causes problems with things moving straight up.
+//So we want arbitrary slope within an upper bound. So:
+//we check if there is a slope collision on their feet
+//we check they are actually standing on something
+//we check that there isn't one at their head
+//if all pass, we move into the slope, then up until we are out of it
+show_debug_message(string(facing))
+show_debug_message(string(preservedHsp))
+if(place_meeting(x +  preservedHsp, y, RAMP) and place_meeting(x,y+1,PLATFORM) and !place_meeting(x+preservedHsp,y-rampSlopeMax,PLATFORM)) {
+    //touch the wall
+    show_debug_message("moving h into wall")
+    while(!place_meeting(x+sign(preservedHsp),y,RAMP)) { //while they are not touching the ramp
+        x += facing; //move them towards it
+    }
+    
+    show_debug_message("stuffing into wall")
+    //now stuff them into the wall 
+    x += facing * rampClimbSpeed;
+    
+    show_debug_message("moving out of ramp")
+    //now move them up until they are out of the ramp
+    while(place_meeting(x,y,RAMP)) { //while they are in the ramp
+        y -= 1; //move them up 1
+    }
 }
 
 </string>

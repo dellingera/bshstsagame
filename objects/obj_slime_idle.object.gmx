@@ -35,7 +35,7 @@ cooldownInitial = 30;
 fireballCooldown = cooldownInitial;
 facingRightWay = 1;
 
-var startScale = image_xscale;
+startScale = image_xscale;
 
 //make global variables
 globalvar facing; 
@@ -79,11 +79,7 @@ hsp = move * movespeed;
 if (key_right) facing = 1;
 if (key_left == -1) facing = -1;
 
-//----------------------------------------------------------Deal With Fireball
-if(spacebar_pressed &amp;&amp; fireballCooldown &lt; 0) {
-    instance_create(x,y,fireball);
-    fireballCooldown = cooldownInitial;
-}
+image_xscale = startScale * facing;
 
 //----------------------------------------------------------Deal With Vertical Speed
 //basic gravity

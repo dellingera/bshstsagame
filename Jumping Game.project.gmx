@@ -36,13 +36,9 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>
-    <object>objects\obj_player</object>
-    <object>objects\fireball</object>
     <object>objects\obj_ramp</object>
-    <object>objects\obj_run</object>
     <object>objects\obj_stone</object>
     <object>objects\obj_slime</object>
-    <object>objects\player</object>
     <object>objects\obj_sandstone</object>
     <object>objects\obj_sand</object>
     <object>objects\obj_icestone</object>
@@ -50,6 +46,8 @@
     <object>objects\obj_sandstoneramp</object>
     <object>objects\obj_sandramp</object>
     <object>objects\obj_warp</object>
+    <object>objects\PLATFORM</object>
+    <object>objects\RAMP</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_stone</room>
