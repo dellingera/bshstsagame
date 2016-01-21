@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>menu[0] = "Start";
-menu[1] = "Help";
-menu[2] = "Quit";
+menu[1] = "Quit";
 
 space = 64;
 mpos = 0; //starts at "Start"
+
 </string>
           </argument>
         </arguments>
@@ -99,7 +99,7 @@ draw_set_color(c_white);
 var m;
 for (m = 0; m &lt; array_length_1d(menu); m += 1)//while m is less than the length of our menu
 {
-    draw_text(x + space, y + (m * space),string(menu[m]))//refer to a specific entry in the array by using a variable to indicate which one of that list of variables we're talking about
+    draw_text(x + space, y + (m * space) + 19,string(menu[m]))//refer to a specific entry in the array by using a variable to indicate which one of that list of variables we're talking about
 }
 
 draw_sprite(sprite_index, 0, x + 16, y + mpos * space);
