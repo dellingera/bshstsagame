@@ -161,7 +161,7 @@ if(!skip) {
 //if all pass, we move into the slope, then up until we are out of it
 show_debug_message(string(facing))
 show_debug_message(string(preservedHsp))
-if(place_meeting(x +  preservedHsp, y, RAMP) and place_meeting(x,y+1,PLATFORM) and !place_meeting(x+preservedHsp,y-rampSlopeMax,PLATFORM)) {
+if(place_meeting(x +  preservedHsp, y, PLATFORM) and place_meeting(x,y+1,PLATFORM) and !place_meeting(x+preservedHsp,y-rampSlopeMax,PLATFORM)) {
     //touch the wall
     show_debug_message("moving h into wall")
     while(!place_meeting(x+sign(preservedHsp),y,RAMP)) { //while they are not touching the ramp
