@@ -21,14 +21,18 @@
     <sprite>sprites\spr_sand</sprite>
     <sprite>sprites\spr_sandstone</sprite>
     <sprite>sprites\spr_icestone</sprite>
+    <sprite>sprites\spr_icestoneramp</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_fireblock</sprite>
+    <sprite>sprites\spr_fireblockramp</sprite>
     <sprite>sprites\spr_sandstoneramp</sprite>
     <sprite>sprites\spr_sandramp</sprite>
     <sprite>sprites\spr_warp</sprite>
+    <sprite>sprites\spr_ice</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -52,11 +56,15 @@
     <object>objects\PLATFORM</object>
     <object>objects\RAMP</object>
     <object>objects\obj_arrow</object>
+    <object>objects\obj_fireblockramp</object>
+    <object>objects\obj_icestoneramp</object>
+    <object>objects\obj_ice</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_stone</room>
     <room>rooms\rm_desert</room>
+    <room>rooms\rm_ice</room>
     <room>rooms\rm_help</room>
   </rooms>
   <help>
