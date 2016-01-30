@@ -29,6 +29,7 @@
     <sprite>sprites\spr_sandramp</sprite>
     <sprite>sprites\spr_warp</sprite>
     <sprite>sprites\spr_ice</sprite>
+    <sprite>sprites\spr_cactus</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -59,12 +60,15 @@
     <object>objects\obj_fireblockramp</object>
     <object>objects\obj_icestoneramp</object>
     <object>objects\obj_ice</object>
+    <object>objects\ENEMY</object>
+    <object>objects\obj_cactus</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_stone</room>
     <room>rooms\rm_desert</room>
     <room>rooms\rm_ice</room>
+    <room>rooms\rm_dead</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

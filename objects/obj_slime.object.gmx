@@ -93,6 +93,11 @@ if (vsp &lt; vspMax) {
     vsp += grav; //add the gravity speed in the downward direction 
 }
 
+//first we need to check if it is colliding with a platform
+if( place_meeting(x, y+vsp, ENEMY) || place_meeting(x+hsp,y,ENEMY) ) {
+    room_goto(rm_dead);
+}
+
 //handle vertical collisions
 if (place_meeting(x, y+vsp, PLATFORM)) { //if they will hit the wall next step
     while(!place_meeting(x,y+sign(vsp),PLATFORM)) { //while they are not touching it
