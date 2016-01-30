@@ -65,7 +65,6 @@
     <room>rooms\rm_stone</room>
     <room>rooms\rm_desert</room>
     <room>rooms\rm_ice</room>
-    <room>rooms\rm_help</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -66,7 +66,7 @@ if (move != 0)//if move is not 0
 
 var push;
 push = max(keyboard_check_released(vk_enter),keyboard_check_released(vk_shift),keyboard_check_released(vk_space),0);//if any of these are released when pushed
-if (push ==1) scr_menu();//if we've pressed a button we'll call a script
+if (push == 1) scr_menu();//if we've pressed a button we'll call a script
 
 
 </string>
