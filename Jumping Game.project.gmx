@@ -62,6 +62,7 @@
     <object>objects\obj_ice</object>
     <object>objects\ENEMY</object>
     <object>objects\obj_cactus</object>
+    <object>objects\dead_room_handler</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
