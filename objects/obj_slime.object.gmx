@@ -99,6 +99,9 @@ if (vsp &lt; vspMax) {
 if( place_meeting(x, y+vsp, ENEMY) || place_meeting(x+hsp,y,ENEMY) ) {
     x = xstart
     y = ystart
+    while(place_meeting(x, y, PLATFORM)){
+        y = y - 1;
+    }
 }
 
 //handle vertical collisions
