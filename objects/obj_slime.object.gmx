@@ -41,18 +41,10 @@ facingRightWay = 1; //facing last frames direction
 var startScale = image_xscale; //flip it over without warping it
 
 //make global vars
-globalvar facing;
 facing = 1;
-globalvar seconds;
-seconds = 5;
-globalvar reset;
-reset = false;
-seconds = seconds * 60; //because it's actually just ticked down every frame
+global.seconds = 60;
+global.seconds = global.seconds * 60; //because it's actually just ticked down every frame
 
-show_debug_message(x);
-show_debug_message(y);
-show_debug_message(xstart);
-show_debug_message(ystart);
 </string>
           </argument>
         </arguments>
@@ -190,10 +182,8 @@ if(place_meeting(x +  preservedHsp, y, PLATFORM) and place_meeting(x,y+1,PLATFOR
     }
 }
 
-
-
 //now we update the timer
-seconds = seconds-1;
+global.seconds = global.seconds-1;
 </string>
           </argument>
         </arguments>
@@ -216,12 +206,12 @@ seconds = seconds-1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dispSeconds = floor(seconds/60);
+            <string>dispSeconds = floor(global.seconds/60);
 draw_text(view_xview[0],view_yview[0]+20,string(dispSeconds));
 
 draw_sprite_ext(sprite_index, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
-if(seconds &lt; 0) {
+if(global.seconds &lt; 0) {
     room_goto(rm_dead);
     instance_destroy();
 }
