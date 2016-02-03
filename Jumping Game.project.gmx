@@ -6,33 +6,58 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_wall2</sprite>
-    <sprite>sprites\spr_player_run</sprite>
-    <sprite>sprites\fireballSprite</sprite>
-    <sprite>sprites\spr_ramp</sprite>
-    <sprite>sprites\spr_rex</sprite>
-    <sprite>sprites\spr_stone</sprite>
-    <sprite>sprites\spr_slime_idle</sprite>
-    <sprite>sprites\spr_slime_run</sprite>
-    <sprite>sprites\spr_slime_jump</sprite>
-    <sprite>sprites\spr_slime_fall</sprite>
-    <sprite>sprites\spr_sand</sprite>
-    <sprite>sprites\spr_sandstone</sprite>
-    <sprite>sprites\spr_icestone</sprite>
-    <sprite>sprites\spr_icestoneramp</sprite>
-    <sprite>sprites\spr_arrow</sprite>
-    <sprite>sprites\spr_fireblock</sprite>
-    <sprite>sprites\spr_fireblockramp</sprite>
-    <sprite>sprites\spr_sandstoneramp</sprite>
-    <sprite>sprites\spr_sandramp</sprite>
-    <sprite>sprites\spr_warp</sprite>
-    <sprite>sprites\spr_ice</sprite>
+    <sprites name="stone">
+      <sprite>sprites\spr_ramp</sprite>
+      <sprite>sprites\spr_stone</sprite>
+      <sprite>sprites\spr_torch</sprite>
+    </sprites>
+    <sprites name="drops">
+      <sprite>sprites\spr_medium_drop</sprite>
+      <sprite>sprites\spr_large_drop</sprite>
+      <sprite>sprites\spr_small_drop</sprite>
+    </sprites>
+    <sprites name="desert">
+      <sprite>sprites\spr_sandstoneramp</sprite>
+      <sprite>sprites\spr_sandramp</sprite>
+      <sprite>sprites\spr_cactus</sprite>
+      <sprite>sprites\spr_sandstone</sprite>
+      <sprite>sprites\spr_sand</sprite>
+    </sprites>
+    <sprites name="misc">
+      <sprite>sprites\spr_wall2</sprite>
+      <sprite>sprites\spr_rex</sprite>
+      <sprite>sprites\spr_player_run</sprite>
+      <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_player</sprite>
+    </sprites>
+    <sprites name="ice">
+      <sprite>sprites\spr_icestoneramp</sprite>
+      <sprite>sprites\spr_ice</sprite>
+      <sprite>sprites\spr_icestone</sprite>
+      <sprite>sprites\spr_iceramp</sprite>
+    </sprites>
+    <sprites name="slime">
+      <sprite>sprites\spr_slime_jump</sprite>
+      <sprite>sprites\spr_slime_fall</sprite>
+      <sprite>sprites\spr_slime_run</sprite>
+      <sprite>sprites\spr_slime_idle</sprite>
+    </sprites>
+    <sprites name="menus">
+      <sprite>sprites\spr_arrow</sprite>
+    </sprites>
+    <sprites name="fire">
+      <sprite>sprites\spr_fireblock</sprite>
+      <sprite>sprites\spr_fireblockramp</sprite>
+    </sprites>
+    <sprites name="portals">
+      <sprite>sprites\spr_warp</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
+    <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -42,30 +67,60 @@
     <font>fonts\font_options</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_wall</object>
-    <object>objects\obj_ramp</object>
-    <object>objects\obj_stone</object>
-    <object>objects\obj_slime</object>
-    <object>objects\obj_sandstone</object>
-    <object>objects\obj_sand</object>
-    <object>objects\obj_icestone</object>
-    <object>objects\obj_fireblock</object>
-    <object>objects\obj_sandstoneramp</object>
-    <object>objects\obj_sandramp</object>
-    <object>objects\obj_warp</object>
-    <object>objects\PLATFORM</object>
-    <object>objects\RAMP</object>
-    <object>objects\obj_arrow</object>
-    <object>objects\obj_fireblockramp</object>
-    <object>objects\obj_icestoneramp</object>
-    <object>objects\obj_ice</object>
+    <objects name="master">
+      <object>objects\DROP_LARGE</object>
+      <object>objects\PLATFORM</object>
+      <object>objects\DROP_MED</object>
+      <object>objects\ENEMY</object>
+      <object>objects\RAMP</object>
+      <object>objects\DROP_SMALL</object>
+      <object>objects\RISING</object>
+    </objects>
+    <objects name="fire">
+      <object>objects\obj_fireblockramp</object>
+      <object>objects\obj_fireblock</object>
+      <object>objects\obj_rising_lava</object>
+    </objects>
+    <objects name="menus">
+      <object>objects\obj_arrow</object>
+      <object>objects\dead_room_handler</object>
+    </objects>
+    <objects name="drops">
+      <object>objects\obj_large_drop</object>
+      <object>objects\obj_med_drop</object>
+      <object>objects\obj_small_drop</object>
+    </objects>
+    <objects name="desert">
+      <object>objects\obj_sandramp</object>
+      <object>objects\obj_sandstoneramp</object>
+      <object>objects\obj_sand</object>
+      <object>objects\obj_sandstone</object>
+      <object>objects\obj_cactus</object>
+    </objects>
+    <objects name="stone">
+      <object>objects\obj_ramp</object>
+      <object>objects\obj_stone</object>
+      <object>objects\obj_torch</object>
+    </objects>
+    <objects name="ice">
+      <object>objects\obj_icestoneramp</object>
+      <object>objects\obj_ice</object>
+      <object>objects\obj_icestone</object>
+      <object>objects\obj_iceramp</object>
+    </objects>
+    <objects name="slime">
+      <object>objects\obj_slime</object>
+    </objects>
+    <objects name="portals">
+      <object>objects\obj_warp</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_stone</room>
     <room>rooms\rm_desert</room>
     <room>rooms\rm_ice</room>
-    <room>rooms\rm_help</room>
+    <room>rooms\rm_dead</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

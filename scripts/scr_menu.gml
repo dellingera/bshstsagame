@@ -7,11 +7,6 @@ switch (mpos)
     }
     case 1:
     {
-        room_goto(rm_help);
-        break;
-    }
-    case 2:
-    {
         game_end();
         break;
     }
