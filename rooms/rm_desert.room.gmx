@@ -4776,7 +4776,6 @@
     <instance objName="obj_cactus" x="5451" y="554" name="inst_A2A4E246" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cactus" x="5451" y="500" name="inst_8A921055" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cactus" x="5451" y="528" name="inst_6E5BBE92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cactus" x="5451" y="475" name="inst_4177A6C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_drop" x="832" y="992" name="inst_ED4BC372" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_drop" x="1248" y="1024" name="inst_3AFFE326" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_drop" x="992" y="832" name="inst_942EB267" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
