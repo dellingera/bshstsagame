@@ -5991,6 +5991,17 @@
     <instance objName="obj_small_drop" x="3504" y="480" name="inst_E1E966BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_large_drop" x="3088" y="448" name="inst_615D0877" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cactus" x="2976" y="1376" name="inst_2B8981D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="112" y="736" name="inst_5D85FAF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="912" y="576" name="inst_839FFFAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="829" y="112" name="inst_7B7891A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="2016" y="784" name="inst_0595A2C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="3168" y="1040" name="inst_97ED28D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="2896" y="1040" name="inst_C421F634" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="3568" y="800" name="inst_C25F4D57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="3808" y="192" name="inst_72260533" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="4112" y="1024" name="inst_6D622307" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_med_drop" x="3376" y="736" name="inst_2DBF03CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_med_drop" x="4576" y="944" name="inst_BB82A279" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="224" y="256" w="16" h="16" xo="0" yo="0" id="10000002" name="inst_89FF0D67" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

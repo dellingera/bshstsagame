@@ -9,6 +9,7 @@
     <sprites name="stone">
       <sprite>sprites\spr_ramp</sprite>
       <sprite>sprites\spr_stone</sprite>
+      <sprite>sprites\spr_torch</sprite>
     </sprites>
     <sprites name="drops">
       <sprite>sprites\spr_medium_drop</sprite>
@@ -33,6 +34,7 @@
       <sprite>sprites\spr_icestoneramp</sprite>
       <sprite>sprites\spr_ice</sprite>
       <sprite>sprites\spr_icestone</sprite>
+      <sprite>sprites\spr_iceramp</sprite>
     </sprites>
     <sprites name="slime">
       <sprite>sprites\spr_slime_jump</sprite>
@@ -54,6 +56,8 @@
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
+    <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -96,11 +100,13 @@
     <objects name="stone">
       <object>objects\obj_ramp</object>
       <object>objects\obj_stone</object>
+      <object>objects\obj_torch</object>
     </objects>
     <objects name="ice">
       <object>objects\obj_icestoneramp</object>
       <object>objects\obj_ice</object>
       <object>objects\obj_icestone</object>
+      <object>objects\obj_iceramp</object>
     </objects>
     <objects name="slime">
       <object>objects\obj_slime</object>
