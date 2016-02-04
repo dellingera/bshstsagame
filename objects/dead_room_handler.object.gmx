@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(350,350, "You have DEDED HAHAHAHAHAHAAH LOLOLO ROFLMAWCOHMOALYA");
+            <string>draw_text(200,350, "You have permanently lost your memories!");
 draw_text(200, 400, "Press Space");
 
 if (keyboard_check_pressed(vk_space)) {
