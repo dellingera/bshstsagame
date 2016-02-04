@@ -58,6 +58,7 @@
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background3</background>
+    <background>background\background4</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -120,6 +121,7 @@
     <room>rooms\rm_stone</room>
     <room>rooms\rm_desert</room>
     <room>rooms\rm_ice</room>
+    <room>rooms\rm_fire</room>
     <room>rooms\rm_dead</room>
   </rooms>
   <help>
