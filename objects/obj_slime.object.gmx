@@ -103,6 +103,13 @@ if( place_meeting(x, y+vsp, ENEMY) || place_meeting(x+hsp,y,ENEMY) ) {
         y = y - 1;
     }
 }
+if( place_meeting(x, y+vsp, obj_lava) || place_meeting(x+hsp,y,obj_lava) ) {
+    x = 128
+    y = 7520
+    while(place_meeting(x, y, PLATFORM)){
+        y = y - 1;
+    }
+}
 
 //handle vertical collisions
 if (place_meeting(x, y+vsp, PLATFORM)) { //if they will hit the wall next step
