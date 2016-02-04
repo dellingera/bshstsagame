@@ -48,6 +48,7 @@
     <sprites name="fire">
       <sprite>sprites\spr_fireblock</sprite>
       <sprite>sprites\spr_fireblockramp</sprite>
+      <sprite>sprites\spr_lava</sprite>
     </sprites>
     <sprites name="portals">
       <sprite>sprites\spr_warp</sprite>
@@ -84,6 +85,7 @@
       <object>objects\obj_fireblockramp</object>
       <object>objects\obj_fireblock</object>
       <object>objects\obj_rising_lava</object>
+      <object>objects\obj_lava</object>
     </objects>
     <objects name="menus">
       <object>objects\obj_arrow</object>
@@ -127,6 +129,7 @@
     <room>rooms\rm_ice</room>
     <room>rooms\rm_fire</room>
     <room>rooms\rm_dead</room>
+    <room>rooms\rm_end</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
