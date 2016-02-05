@@ -45,6 +45,9 @@ facing = 1;
 global.seconds = 60;
 global.seconds = global.seconds * 60; //because it's actually just ticked down every frame
 
+//continue to increment seconds?
+global.isDone = false;
+
 </string>
           </argument>
         </arguments>
@@ -67,7 +70,12 @@ global.seconds = global.seconds * 60; //because it's actually just ticked down e
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//this is where the player is supposed to be positioned - the center of the screen
+            <string>//glitch protection - if they are in a block, pop them out
+while(place_meeting(x,y,PLATFORM)) {
+    y = y-1;
+}
+
+//this is where the player is supposed to be positioned - the center of the screen
 targetX=x-325;
 targetY=y-360;
 //now, we are moving view 0 to that position based on this formula. I just copied and pasted this lol
@@ -177,10 +185,13 @@ if(!skip) {
 //we check they are actually standing on something
 //we check that there isn't one at their head
 //if all pass, we move into the slope, then up until we are out of it
-if(place_meeting(x +  preservedHsp, y, PLATFORM) and place_meeting(x,y+1,PLATFORM) and !place_meeting(x+preservedHsp,y-rampSlopeMax,PLATFORM)) {
+if(place_meeting(x + preservedHsp, y, PLATFORM) and place_meeting(x,y+1,PLATFORM) and !place_meeting(x+preservedHsp,y-rampSlopeMax,PLATFORM)) {
+    maxMove = 5;
+    move = 0;
     //touch the wall
-    while(!place_meeting(x+sign(preservedHsp),y,RAMP)) { //while they are not touching the ramp
-        x += facing; //move them towards it
+    while(!place_meeting(x+sign(preservedHsp),y,RAMP) &amp;&amp; move &lt; maxMove) { //while they are not touching the ramp
+        x += facing;
+        move++;
     }
     
     //now stuff them into the wall 
@@ -193,7 +204,9 @@ if(place_meeting(x +  preservedHsp, y, PLATFORM) and place_meeting(x,y+1,PLATFOR
 }
 
 //now we update the timer
-global.seconds = global.seconds-1;
+if(!global.isDone) {
+    global.seconds = global.seconds-1;
+}
 </string>
           </argument>
         </arguments>
