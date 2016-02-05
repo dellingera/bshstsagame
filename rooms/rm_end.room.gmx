@@ -2452,6 +2452,7 @@
     <instance objName="obj_lava" x="0" y="160" name="inst_F9CEB5B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblock" x="-96" y="192" name="inst_E386E1BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblock" x="-128" y="224" name="inst_CDB57281" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="end_room_handler" x="288" y="416" name="inst_36AC15B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

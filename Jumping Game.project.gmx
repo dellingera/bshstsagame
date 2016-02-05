@@ -89,7 +89,9 @@
     </objects>
     <objects name="menus">
       <object>objects\obj_arrow</object>
+      <object>objects\obj_death</object>
       <object>objects\dead_room_handler</object>
+      <object>objects\end_room_handler</object>
     </objects>
     <objects name="drops">
       <object>objects\obj_large_drop</object>
@@ -120,7 +122,6 @@
     <objects name="portals">
       <object>objects\obj_warp</object>
     </objects>
-    <object>objects\obj_death</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
