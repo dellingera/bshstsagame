@@ -57,6 +57,7 @@
     </sprites>
     <sprite>sprites\spr_death</sprite>
     <sprite>sprites\sprite29</sprite>
+    <sprite>sprites\spr_sign</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -74,6 +75,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_options</font>
+    <font>fonts\font_sign</font>
   </fonts>
   <objects name="objects">
     <objects name="master">
@@ -129,6 +131,7 @@
     <objects name="portals">
       <object>objects\obj_warp</object>
     </objects>
+    <object>objects\obj_sign</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
