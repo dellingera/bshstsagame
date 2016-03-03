@@ -10,6 +10,8 @@
       <sprite>sprites\spr_ramp</sprite>
       <sprite>sprites\spr_stone</sprite>
       <sprite>sprites\spr_torch</sprite>
+      <sprite>sprites\spr_dungeon</sprite>
+      <sprite>sprites\spr_dungeonramp</sprite>
     </sprites>
     <sprites name="drops">
       <sprite>sprites\spr_medium_drop</sprite>
@@ -63,6 +65,8 @@
     <background>background\background3</background>
     <background>background\background4</background>
     <background>background\background6</background>
+    <background>background\bg_wood</background>
+    <background>background\background10</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -110,6 +114,8 @@
       <object>objects\obj_ramp</object>
       <object>objects\obj_stone</object>
       <object>objects\obj_torch</object>
+      <object>objects\obj_dungeon</object>
+      <object>objects\obj_dungeonramp</object>
     </objects>
     <objects name="ice">
       <object>objects\obj_icestoneramp</object>
@@ -132,6 +138,7 @@
     <room>rooms\rm_fire</room>
     <room>rooms\rm_dead</room>
     <room>rooms\rm_end</room>
+    <room>rooms\rm_tutorial</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
