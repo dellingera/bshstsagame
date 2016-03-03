@@ -11693,7 +11693,6 @@
     <instance objName="obj_fireblock" x="-608" y="5056" name="inst_116A3841" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblock" x="-608" y="5088" name="inst_14C08ED4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblock" x="-608" y="5120" name="inst_EB553F73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_large_drop" x="992" y="1088" name="inst_35280B87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblockramp" x="800" y="2272" name="inst_54A48C05" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblockramp" x="864" y="2144" name="inst_E0851342" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblockramp" x="800" y="2048" name="inst_57E82562" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -12502,8 +12501,6 @@
     <instance objName="obj_fireblock" x="768" y="192" name="inst_0D29D877" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="752" y="160" name="inst_2549A6C2" locked="0" code="target_x = 320;&#xA;target_y = 480;&#xA;target_r = rm_end;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblockramp" x="1344" y="6400" name="inst_D793D6E2" locked="0" code="" scaleX="-1" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_large_drop" x="-96" y="4064" name="inst_CF4D9E98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_large_drop" x="0" y="2528" name="inst_3FCFCC16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblockramp" x="1248" y="6496" name="inst_7AB6F87E" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblockramp" x="1248" y="6464" name="inst_9203BFD9" locked="0" code="" scaleX="-1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblockramp" x="1312" y="6336" name="inst_26664B41" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -13188,6 +13185,9 @@
     <instance objName="obj_fireblockramp" x="96" y="7456" name="inst_81F97B11" locked="0" code="" scaleX="-1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblockramp" x="96" y="7488" name="inst_C5F2D6FE" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireblockramp" x="128" y="7520" name="inst_43D5BF58" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_large_drop" x="0" y="4736" name="inst_793799FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_large_drop" x="0" y="2560" name="inst_D257217F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_large_drop" x="992" y="1088" name="inst_DD3F5146" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

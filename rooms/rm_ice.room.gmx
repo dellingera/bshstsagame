@@ -3145,7 +3145,6 @@
     <instance objName="obj_ice" x="2656" y="480" name="inst_0A5ECF07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ice" x="2656" y="512" name="inst_2B423BB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ice" x="2656" y="576" name="inst_72C4B0CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_large_drop" x="-32" y="0" name="inst_E8574FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_drop" x="912" y="752" name="inst_6A4B7CBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_drop" x="640" y="784" name="inst_37375A76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_drop" x="960" y="1088" name="inst_16473855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -7729,6 +7728,8 @@
     <instance objName="obj_icestone" x="3712" y="-32" name="inst_4C2F75C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_icestone" x="3712" y="-64" name="inst_3AF1E36C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_drop" x="3696" y="-64" name="inst_ED4A4DA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_large_drop" x="-32" y="16" name="inst_42D882D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_large_drop" x="3120" y="-336" name="inst_DF045A41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

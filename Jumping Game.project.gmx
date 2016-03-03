@@ -13,8 +13,8 @@
     </sprites>
     <sprites name="drops">
       <sprite>sprites\spr_medium_drop</sprite>
-      <sprite>sprites\spr_large_drop</sprite>
       <sprite>sprites\spr_small_drop</sprite>
+      <sprite>sprites\spr_large_drop</sprite>
     </sprites>
     <sprites name="desert">
       <sprite>sprites\spr_sandstoneramp</sprite>
@@ -79,6 +79,7 @@
       <object>objects\ENEMY</object>
       <object>objects\RAMP</object>
       <object>objects\DROP_SMALL</object>
+      <object>objects\TEST_MASTER</object>
       <object>objects\RISING</object>
     </objects>
     <objects name="fire">
@@ -94,9 +95,9 @@
       <object>objects\dead_room_handler</object>
     </objects>
     <objects name="drops">
-      <object>objects\obj_large_drop</object>
       <object>objects\obj_med_drop</object>
       <object>objects\obj_small_drop</object>
+      <object>objects\obj_large_drop</object>
     </objects>
     <objects name="desert">
       <object>objects\obj_sandramp</object>
