@@ -131,7 +131,18 @@
     <objects name="portals">
       <object>objects\obj_warp</object>
     </objects>
-    <object>objects\obj_sign</object>
+    <objects name="Sign">
+      <object>objects\obj_sign_1</object>
+      <object>objects\obj_sign_2</object>
+      <object>objects\obj_sign_3</object>
+      <object>objects\obj_sign_4</object>
+      <object>objects\obj_sign_5</object>
+      <object>objects\obj_sign_6</object>
+      <object>objects\obj_sign_7</object>
+      <object>objects\obj_sign_8</object>
+      <object>objects\obj_sign_9</object>
+      <object>objects\obj_sign_10</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
