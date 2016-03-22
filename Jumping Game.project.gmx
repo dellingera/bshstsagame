@@ -93,6 +93,7 @@
       <object>objects\obj_fireblock</object>
       <object>objects\obj_rising_lava</object>
       <object>objects\obj_lava</object>
+      <object>objects\obj_lavatut</object>
     </objects>
     <objects name="menus">
       <object>objects\obj_arrow</object>
@@ -111,6 +112,7 @@
       <object>objects\obj_sand</object>
       <object>objects\obj_sandstone</object>
       <object>objects\obj_cactus</object>
+      <object>objects\obj_cactustut</object>
     </objects>
     <objects name="stone">
       <object>objects\obj_ramp</object>
@@ -130,6 +132,7 @@
     </objects>
     <objects name="portals">
       <object>objects\obj_warp</object>
+      <object>objects\obj_warptut</object>
     </objects>
     <objects name="Sign">
       <object>objects\obj_sign_1</object>

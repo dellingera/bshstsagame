@@ -6203,15 +6203,6 @@
     <instance objName="obj_small_drop" x="2528" y="288" name="inst_0E0FF534" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_drop" x="2496" y="320" name="inst_BED2D83F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_drop" x="2432" y="320" name="inst_993D9B9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign_1" x="192" y="896" name="inst_F3DDB927" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign_2" x="480" y="896" name="inst_E5A13114" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign_3" x="544" y="864" name="inst_8BAD0A7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign_4" x="768" y="768" name="inst_C654A12E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign_5" x="1056" y="704" name="inst_159A673F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign_6" x="1184" y="704" name="inst_E1BD392E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign_7" x="1344" y="672" name="inst_19E721A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign_8" x="1504" y="640" name="inst_306D8534" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign_9" x="1600" y="640" name="inst_5E9FBE0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="224" y="256" w="16" h="16" xo="0" yo="0" id="10000002" name="inst_89FF0D67" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

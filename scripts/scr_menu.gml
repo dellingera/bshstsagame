@@ -7,6 +7,11 @@ switch (mpos)
     }
     case 1:
     {
+        room_goto(rm_tutorial);//takes you to the tutorial
+        break;
+    }
+    case 2:
+    {
         game_end();
         break;
     }

@@ -116,6 +116,9 @@ key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left); //except this one, this one is negative - notice the '-' symbol
 key_up = keyboard_check_pressed(vk_up);
 spacebar_pressed = keyboard_check(vk_space);
+key_escape = keyboard_check(vk_escape);
+
+if (key_escape == 1) { room_goto(rm_menu); instance_destroy(); }//escape key ends game
 
 
 move = key_left + key_right;
@@ -146,6 +149,25 @@ if( place_meeting(x, y+vsp, obj_lava) || place_meeting(x+hsp,y,obj_lava) ) {
         y = y - 1;
     }
 }
+if( place_meeting(x, y+vsp, obj_lavatut) || place_meeting(x+hsp,y,obj_lavatut) ) {
+    x = 1312
+    y = 768
+    while(place_meeting(x, y, PLATFORM)){
+        y = y - 1;
+    }
+}
+if( place_meeting(x, y+vsp, obj_cactustut) || place_meeting(x+hsp,y,obj_cactustut) ) {
+    x = 1312
+    y = 768
+    while(place_meeting(x, y, PLATFORM)){
+        y = y - 1;
+    }
+}
+if( place_meeting(x, y+vsp, obj_warptut) || place_meeting(x+hsp,y,obj_warptut) ) {
+    room_goto(rm_menu);
+    instance_destroy();
+    }
+
 
 //handle vertical collisions
 if (place_meeting(x, y+vsp, PLATFORM)) { //if they will hit the wall next step
@@ -258,7 +280,7 @@ if(!global.isDone) {
           <argument>
             <kind>1</kind>
             <string>dispSeconds = floor(global.seconds/60);
-draw_text(view_xview[0],view_yview[0]+20,string(dispSeconds));
+draw_text(view_xview[0],view_yview[0]+35,string(dispSeconds));
 
 draw_sprite_ext(sprite_index, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
